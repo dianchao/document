@@ -1,0 +1,9 @@
+com\roy\rocketmq\RocketMQSBApplication.class
+com\roy\rocketmq\controller\MQTestController.class
+com\roy\rocketmq\domain\ProductWithPayload.class
+com\roy\rocketmq\basic\SpringProducer.class
+com\roy\rocketmq\domain\OrderPaidEvent.class
+com\roy\rocketmq\domain\User.class
+com\roy\rocketmq\config\MyTransactionImpl.class
+com\roy\rocketmq\basic\SpringConsumer.class
+com\roy\rocketmq\config\Swagger2.class

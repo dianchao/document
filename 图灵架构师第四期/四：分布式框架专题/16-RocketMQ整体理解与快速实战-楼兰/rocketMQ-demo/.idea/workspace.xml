@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a5cde91-f929-4264-94de-3a836c866ddb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kuTXR3LN3m6CHQVwcqKpXFlcVM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/config" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\a备课资料\RocketMQ\VIP课程\配套资料\rocketMQ-demo\SpringBoot-rocketmq\src\main\java\com\roy\rocketmq\config" />
+      <recent name="E:\a备课资料\RocketMQ\VIP课程\配套资料\rocketMQ-demo\src\main\java" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package -Dmaven.test.skip=true" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="Consumer (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.rocketmq.example.ordermessage.Consumer" />
+      <module name="rocketMQ-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.rocketmq.example.ordermessage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.rocketmq.example.quickstart.Consumer" />
+      <module name="rocketMQ-API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.rocketmq.example.quickstart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PushConsumer (2)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.rocketmq.example.broadcast.PushConsumer" />
+      <module name="rocketMQ-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.rocketmq.example.broadcast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="rocketMQ-API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.rocketmq.example.transaction.TransactionProducer" />
+      <module name="rocketMQ-API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.rocketmq.example.transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMQSBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot-rocketmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roy.rocketmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.roy.rocketmq.RocketMQSBApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScRocketMQApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SC-rocketmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roy.scrocket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.roy.scrocket.ScRocketMQApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Consumer (1)" />
+      <item itemvalue="Application.PushConsumer (2)" />
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.TransactionProducer" />
+      <item itemvalue="Spring Boot.RocketMQSBApplication" />
+      <item itemvalue="Spring Boot.ScRocketMQApplication" />
+      <item itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.RocketMQSBApplication" />
+        <item itemvalue="Spring Boot.ScRocketMQApplication" />
+        <item itemvalue="Application.TransactionProducer" />
+        <item itemvalue="Application.Consumer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a5cde91-f929-4264-94de-3a836c866ddb" name="Default Changelist" comment="" />
+      <created>1606549515492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606549515492</updated>
+      <workItem from="1606549519403" duration="7613000" />
+      <workItem from="1606803718172" duration="9357000" />
+      <workItem from="1606871999084" duration="12728000" />
+      <workItem from="1607043493842" duration="11175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1606893269697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606893269697" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1606804099412" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606889487421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606889487421" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606815708723" />
+    <state x="281" y="333" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606550195703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="281" y="333" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1606550195703" />
+    <state x="540" y="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1606550198676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1606550198676" />
+    <state x="871" y="78" key="#xdebugger.evaluate" timestamp="1607047024915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="871" y="78" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1607047024915" />
+    <state width="451" height="466" key="DebuggerActiveHint" timestamp="1606553164561">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="451" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1606553164561" />
+    <state width="1493" height="53" key="GridCell.Tab.0.bottom" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191269" />
+    <state width="1493" height="53" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.0.center" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191269" />
+    <state width="1493" height="53" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.0.left" timestamp="1607077372479">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191269" />
+    <state width="1493" height="53" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607077372479" />
+    <state width="1493" height="53" key="GridCell.Tab.0.right" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191269" />
+    <state width="1493" height="53" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.1.bottom" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191270" />
+    <state width="1493" height="53" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.1.center" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191270" />
+    <state width="1493" height="53" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.1.left" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191269" />
+    <state width="1493" height="53" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.1.right" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1606895191270" />
+    <state width="1493" height="53" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.2.bottom" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="53" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.2.center" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="53" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.2.left" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="53" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state width="1493" height="53" key="GridCell.Tab.2.right" timestamp="1607077372480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="53" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607077372480" />
+    <state x="262" y="56" key="SettingsEditor" timestamp="1606549837968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="262" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606549837968" />
+    <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1607065614267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1607065614267" />
+    <state x="467" y="145" width="640" height="534" key="find.popup" timestamp="1607047947119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="145" width="640" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1607047947119" />
+    <state x="178" y="72" key="new project wizard" timestamp="1606555273828">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606555273828" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1606809532279">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606809532279" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607065592823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607065592823" />
+  </component>
+</project>
