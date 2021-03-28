@@ -1,0 +1,7 @@
+说明：
+01、Mysql主从架构及分库分表详解
+02、ShardingSphere快速开始与核心概念
+03、ShardingSphere核心源码剖析
+04、ShardingSphere实战场景&与Atlas和Mycat对比
+
+ 以上4节课的代码都放在了第1节课（Mysql主从架构及分库分表详解）的资料里面，请知悉~~~
