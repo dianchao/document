@@ -1,0 +1,76 @@
+﻿
+1. TM如何获取全局事务id    xid
+从TC获取  RPC调用
+TC： global_table  存全局事务会话信息（包括xid）
+
+
+源码入口：
+@GlobalTransactional(name="createOrder")
+GlobalTransactionScanner       扫描@GlobalTransactional
+GlobalTransactionScanner extends AbstractAutoProxyCreator
+》GlobalTransactionalInterceptor implements MethodInterceptor
+怎么找入口：
+TransactionalTemplate#execute
+
+AOP    MethodInterceptor
+GlobalTransactionScanner#wrapIfNecessary
+GlobalTransactionalInterceptor#handleGlobalTransaction
+
+springboot自动配置 
+SeataAutoConfiguration
+
+核心逻辑：
+ beginTransaction(txInfo, tx);
+
+                Object rs;
+                try {
+                    // Do Your Business
+                    rs = business.execute();
+                } catch (Throwable ex) {
+                    // 3. The needed business exception to rollback.
+                    completeTransactionAfterThrowing(txInfo, tx, ex);
+                    throw ex;
+                }
+
+                // 4. everything is fine, commit.
+                commitTransaction(tx);
+
+全局事务核心接口：
+GlobalTransaction   
+TM负责全局事务的提交和回滚
+DefaultGlobalTransaction#begin(int, java.lang.String)：
+1. 获取xid
+GlobalBeginResponse response = (GlobalBeginResponse) syncCall(request)
+Tm客户端：
+TmNettyRemotingClient
+》》rpc调用
+服务端：NettyRemotingServer
+TC： DefaultCoordinator
+DefaultCoordinator#doGlobalBegin
+xid的生成策略：
+ipAddress + ":" + port + ":" + UUIDGenerator.generateUUID()
+GlobalSession持久化的策略：  store.mode:    file,db,redis
+session.begin()
+>>writeSession(LogOperation.GLOBAL_ADD, session)
+
+事务持久化的核心接口： TransactionStoreManager
+
+启动服务，初始化TmNettyRemotingClient对象
+利用spring的扩展点实现：
+implements  InitializingBean
+》TMClient.init
+
+2. 绑定xid到context   :    需要传递到下一个RM
+RootContext.bind(xid)
+Fegin:     
+SeataFeignClient#getModifyRequest
+>String xid = RootContext.getXID();
+>>headers.put(RootContext.KEY_XID, seataXid);
+
+
+
+
+
+
+
+

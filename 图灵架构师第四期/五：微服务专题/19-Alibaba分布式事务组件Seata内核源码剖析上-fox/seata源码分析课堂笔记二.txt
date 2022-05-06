@@ -1,0 +1,50 @@
+﻿找入口：
+
+一阶段本地事务提交，分支事务注册：
+orderMapper.insert(order)；
+
+1. DataSourceProxy
+>>ConnectionProxy
+>>>ConnectionProxy#commit
+
+
+register:  注册分支事务
+和TC通信
+DefaultCoordinator#doBranchRegister
+
+分支事务表： branch_table 插入一条数据
+lock_table： 插入数据
+
+全局锁： 
+Global lock acquire failed
+
+lockKey： order_tbl:90
+行锁收集
+collectRowLocks(branchSession)
+RowLock  :  list   多行 3----》 3
+唯一性： 
+getRowKey(rowLock.getResourceId(), rowLock.getTableName(), rowLock.getPk())
+为什么保存到lock_table意味着加锁成功？
+RowKey不冲突  
+
+插入undo_log
+UndoLogManagerFactory.getUndoLogManager(this.getDbType()).flushUndoLogs(this);
+
+本地事务的提交
+targetConnection.commit();  # 手动提交
+
+什么时候生成了前置镜像和后置镜像？
+T result = executeAutoCommitFalse(args);
+
+读未提交的
+
+行锁：   lockkey    table_name:id    注册到lock_table
+
+什么时候事务的自动提交被设置为手动提交？ 
+connectionProxy.setAutoCommit(false);
+
+sql :    perparedstatement. execute
+
+PreparedStatementProxy
+前后插入逻辑
+PreparedStatement.execute(sql)
