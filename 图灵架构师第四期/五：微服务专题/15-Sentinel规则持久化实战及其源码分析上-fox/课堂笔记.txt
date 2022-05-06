@@ -1,0 +1,66 @@
+﻿流控规则举例：
+
+sentinel客户端： 内存中存储规则
+
+流控规则： FlowRule
+流控规则管理器： FlowRuleManager
+内存
+map:  Map<String, List<FlowRule>> flowRules = new ConcurrentHashMap<String, List<FlowRule>>()
+
+校验slot:   FlowSlot
+
+取规则： FlowRuleManager#getFlowRuleMap
+
+加载规则：
+FlowRuleManager.loadRules(rules)
+》currentProperty.updateValue(rules);
+》flowRules.putAll(rules);
+》flowRules 
+
+
+sentinel Dashboard 如何推送规则到sentinel客户端的内存中的？
+
+通信
+
+DispatchServlet#doDispatch
+
+发布流控配置： /v1/flow/rule
+控制台封装的规则实体：   FlowRuleEntity
+
+控制台保存规则： repository.save(entity)
+---- 扩展点     mysql,redis    接口   RuleRepository
+内存：  allRules  machineRules  appRules
+
+异步设置流控规则  （和sentinel客户端通信）
+FlowRuleEntity   -------》 FlowRule
+发起请求设置流控规则
+http://192.168.65.18:8720/setRules
+
+sentinel客户端处理
+setRules的 CommandHander
+获取写数据源，持久化
+ModifyRulesCommandHandler#writeToDataSource
+WritableDataSource  接口     === 扩展点 
+WritableDataSourceRegistry#registerFlowDataSource
+
+
+拉规则模式如何集成到spring cloud中？ 
+
+ApplicationLisenter
+@PostConstruct
+BeanPostProcessor
+SmartInitializingSingleton
+springboot:   ApplicationRunner
+
+优先考虑sentinel中是否可以实现扩展
+SPI机制
+InitFunc  实现拉模式的读写数据源的配置
+
+
+
+
+
+
+
+
+
