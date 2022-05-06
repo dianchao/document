@@ -1,0 +1,31 @@
+
+SpringMVC     =====>      Spring WebFlux
+
+DispatchServlet =====> DispatchHandler
+
+路由匹配： 
+HandlerMapping =====>HandlerMapping 
+
+Controller/Servlet/ @RequetMapping
+
+HanderAdaper  ====>   HanderAdaper
+
+Hander              =====>  WebHander
+
+
+http://localhost:8021/order/findOrderByUserId/1
+===>>>
+http://localhost:8888/mall-order/order/findOrderByUserId/1
+
+mall-order---> localhost:8021
+
+====>
+http://localhost:8888/order/findOrderByUserId/1
+
+localhost:8888====> localhost:8021
+/order/       mall-order
+
+lb://mall-order      8020,8021      8021
+http://localhost:8021/order/findOrderByUserId/1
+ 
+gateway  route&predicates  建立映射关系
