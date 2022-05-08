@@ -1,0 +1,36 @@
+﻿https://open.weixin.qq.com/connect/qrconnect?
+appid=wx827225356b689e24
+&state=F6E857F35334D02E7ECBC57118B3FFACF00884F39C90953DBF3A3681F1943265DAEEE86025CB9D0246C633DF3BAB8348
+&redirect_uri=https://qq.jd.com/new/wx/callback.action?view=null
+&uuid=0afa64f023aa4306bb84ade4ce06e666
+&response_type=code
+&scope=snsapi_login
+#wechat_redirect
+
+
+微信开放平台
+appid:   京东商城去微信开放平台注册    appid,appsecret   需要绑定redirect_uri
+
+redirect_uri： https://qq.jd.com/new/wx/callback.action?view=null    京东提供的接口
+
+response_type：  code    oauth2授权码模式
+
+微信的资源： 用户是资源的拥有者
+授权服务器：  做认证授权
+资源服务器：  资源信息   微信用户信息： 微信名 头像
+
+https://qq.jd.com/new/wx/callback.action?view=null       回调地址
+&uuid=66662835a922435abd9527158035385d
+&code=061M1TGa1dI27B0p2MHa15nwiQ0M1TGk
+&state=ABDABCA13F64FA584B3080D7746AA4D00A40A432D850F87716128FFBBB5ADAEE11594B8C01AC1283CA4EFDDF59A279CA
+
+code：  授权码  061M1TGa1dI27B0p2MHa15nwiQ0M1TGk
+
+
+
+
+
+
+
+
+https://developers.weixin.qq.com/doc/oplatform/Mobile_App/WeChat_Login/Development_Guide.html

@@ -1,0 +1,4 @@
+通过code获取到access_token后，访问http://localhost:8080/user/getCurrentUser无效的原因：
+配置了token存储策略是redis，但是AuthorizationServerEndpoints没有指定为redis存储策略，
+.tokenStore(tokenStore)这行代码被注释了
+
