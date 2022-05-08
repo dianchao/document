@@ -1,0 +1,43 @@
+﻿
+OAuth2协议 ： 四种授权模式
+java中的实现
+Spring Security Oauth2
+
+gateway    美团·
+
+oauth/authorize   授权
+oauth/token        获取access_token , refresh_token
+oauth/check_token  校验令牌 
+
+
+1.  /oauth/authorize    为什么还要登录    需要用户授权的
+2.   授权返回界面   自定义   
+forward:/oauth/confirm_access 
+
+入口： /oauth/authorize 
+@RequestMapping(value = "/oauth/authorize")
+
+1.  
+@Controller 
+@SessionAttributes("authorizationRequest")
+
+@RequestMapping("/oauth/confirm_access")
+public ModelAndView getAccessConfirmation(){}
+
+你不知道你不知道    
+你知道你不知道 
+你知道你知道 
+你不知道你知道
+
+token    redis
+
+jwt :  对称加密   非对称加密（公钥 私钥）
+
+
+
+
+
+
+
+
+
