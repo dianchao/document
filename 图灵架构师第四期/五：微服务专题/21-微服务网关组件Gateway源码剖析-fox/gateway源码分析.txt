@@ -1,0 +1,53 @@
+﻿怎么找入口？
+
+1. 自动配置
+GateWayAutoConfiguration
+@Bean  切入点 （使用过程中接触过 核心接口类方法）
+
+看不懂
+netty   reator
+2. spring webflux  
+==>  spring webmvc 
+切入点
+DispatcherServlet======   DispatcherHandler
+HanderMapping======HanderMapping
+HanderAdapter======HanderAdapter
+Hander
+
+目的： (带着目的去猜)
+http://localhost:8888/order/findOrderByUserId/1
+
+path: /order/**  路径匹配     after:时间  
+===》
+mall-order:  localhost:8021
+
+localhost:8888==== localhost:8021  ?
+http://localhost:8021/order/findOrderByUserId/1
+
+
+
+RouteDefinition====》 Route
+
+GlobalFilter  GatewayFilter
+关注点： 
+GlobalFilter怎么转换成GatewayFilter？ 
+GatewayFilterAdapter implements GatewayFilter
+设计模式： 适配器模式 
+filterchain   list==>  GatewayFilter
+chain.filter   责任链
+
+uri:
+http://localhost:8888/order/findOrderByUserId/1
+====>  ?
+lb://mall-order/order/findOrderByUserId/1
+
+==>
+http://localhost:8021/order/findOrderByUserId/1
+转发
+http://192.168.65.103:8021/order/findOrderByUserId/1
+
+
+
+
+
+
